@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
+import BuyProcess from "./BuyProcess";
 import Web3 from "web3";
 
 function App() {
@@ -33,11 +34,16 @@ function App() {
         <div>
             <header className="main-header">
             </header>
-            <main>                
+            <main>
+                {isConnected && (
+                    <BuyProcess />
+                )}
                 {isConnected && (
                     <Home currentAccount={currentAccount} balance={balance} />
                 )}
-                {!isConnected && <Login onLogin={onLogin} onLogout={onLogout} />}
+                {!isConnected && (
+                    <Login onLogin={onLogin} onLogout={onLogout} />
+                )}
             </main>
         </div>
     );

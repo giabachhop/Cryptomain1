@@ -4,8 +4,8 @@ import Timer from "./Timer";
 import "./Timer.css";
 import ConnectWallet from "./Connect";
 
-export default function Buy() {
-    return (
+function Buy() {
+        return (
         <div>            
             <div className="justify-center items-center min-h-screen bg-white text-center">
             
@@ -45,10 +45,9 @@ export default function Buy() {
                     <input className="text-white text-center bg-blue-800 text-xl" type="text" value="Public Sale: 0x9b1aA0c234c889aC7aa9382a3e5F80d5c5Af5510" readonly="readonly" />
                 </div>
                 <ConnectWallet />
-
-                
-
             </div>
         </div>
     );
 }
+
+export default Buy

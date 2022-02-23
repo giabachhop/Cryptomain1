@@ -36,7 +36,7 @@ function App() {
             </header>
             <main>
                 {isConnected && (
-                    <BuyProcess />
+                    <BuyProcess currentAccount={currentAccount} balance={balance} />
                 )}
                 {isConnected && (
                     <Home currentAccount={currentAccount} balance={balance} />

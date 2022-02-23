@@ -26,7 +26,8 @@
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2",
-    "web3": "^1.6.1"
+    "web3": "^1.6.1",
+    "web3-eth": "^1.6.1"
   },
   "scripts": {
     "start": "craco --openssl-legacy-provider start",
